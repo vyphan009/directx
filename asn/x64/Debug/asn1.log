@@ -1,0 +1,30 @@
+﻿  Mirror.cpp
+Mirror.obj : error LNK2019: unresolved external symbol D3DXMatrixMultiply referenced in function "public: void __cdecl Mirror::draw(class Mesh *,int)" (?draw@Mirror@@QEAAXPEAVMesh@@H@Z)
+Mesh.obj : error LNK2001: unresolved external symbol D3DXMatrixMultiply
+Mirror.obj : error LNK2019: unresolved external symbol D3DXMatrixReflect referenced in function "public: void __cdecl Mirror::init(struct IDirect3DDevice9 *,struct D3DXVECTOR3 *,int,unsigned long)" (?init@Mirror@@QEAAXPEAUIDirect3DDevice9@@PEAUD3DXVECTOR3@@HK@Z)
+Mirror.obj : error LNK2019: unresolved external symbol D3DXPlaneFromPoints referenced in function "public: void __cdecl Mirror::init(struct IDirect3DDevice9 *,struct D3DXVECTOR3 *,int,unsigned long)" (?init@Mirror@@QEAAXPEAUIDirect3DDevice9@@PEAUD3DXVECTOR3@@HK@Z)
+Snow.obj : error LNK2001: unresolved external symbol D3DXPlaneFromPoints
+Camera.obj : error LNK2019: unresolved external symbol D3DXVec3Normalize referenced in function "public: void __cdecl Camera::getViewMatrix(struct D3DXMATRIX *)" (?getViewMatrix@Camera@@QEAAXPEAUD3DXMATRIX@@@Z)
+GameInit.obj : error LNK2001: unresolved external symbol D3DXVec3Normalize
+Camera.obj : error LNK2019: unresolved external symbol D3DXVec3TransformCoord referenced in function "public: void __cdecl Camera::pitch(float)" (?pitch@Camera@@QEAAXM@Z)
+GameInit.obj : error LNK2001: unresolved external symbol D3DXVec3TransformCoord
+Camera.obj : error LNK2019: unresolved external symbol D3DXMatrixRotationY referenced in function "public: void __cdecl Camera::yaw(float)" (?yaw@Camera@@QEAAXM@Z)
+Camera.obj : error LNK2019: unresolved external symbol D3DXMatrixRotationAxis referenced in function "public: void __cdecl Camera::pitch(float)" (?pitch@Camera@@QEAAXM@Z)
+GameInit.obj : error LNK2001: unresolved external symbol D3DXMatrixRotationAxis
+GameInit.obj : error LNK2019: unresolved external symbol Direct3DCreate9 referenced in function "public: int __cdecl GameInit::init(struct HWND__ *)" (?init@GameInit@@QEAAHPEAUHWND__@@@Z)
+GameInit.obj : error LNK2019: unresolved external symbol D3DXVec3TransformNormal referenced in function "public: int __cdecl GameInit::picking(int,int)" (?picking@GameInit@@QEAAHHH@Z)
+GameInit.obj : error LNK2019: unresolved external symbol D3DXMatrixInverse referenced in function "public: int __cdecl GameInit::picking(int,int)" (?picking@GameInit@@QEAAHHH@Z)
+Mesh.obj : error LNK2001: unresolved external symbol D3DXMatrixInverse
+GameInit.obj : error LNK2019: unresolved external symbol D3DXMatrixPerspectiveFovLH referenced in function "public: void __cdecl GameInit::projectionInit(void)" (?projectionInit@GameInit@@QEAAXXZ)
+GameInit.obj : error LNK2019: unresolved external symbol D3DXCreateFontA referenced in function "public: void __cdecl GameInit::initFont(void)" (?initFont@GameInit@@QEAAXXZ)
+GameInit.obj : error LNK2019: unresolved external symbol D3DXLoadSurfaceFromFileA referenced in function "int __cdecl LoadBitmapToSurface(char const *,struct IDirect3DSurface9 * *,struct IDirect3DDevice9 *)" (?LoadBitmapToSurface@@YAHPEBDPEAPEAUIDirect3DSurface9@@PEAUIDirect3DDevice9@@@Z)
+GameInit.obj : error LNK2019: unresolved external symbol D3DXLoadSurfaceFromSurface referenced in function "public: int __cdecl GameInit::initBitmap(int,int)" (?initBitmap@GameInit@@QEAAHHH@Z)
+Mesh.obj : error LNK2019: unresolved external symbol D3DXMatrixScaling referenced in function "public: __cdecl Mesh::Mesh(void)" (??0Mesh@@QEAA@XZ)
+Mesh.obj : error LNK2019: unresolved external symbol D3DXMatrixTranslation referenced in function "public: __cdecl Mesh::Mesh(void)" (??0Mesh@@QEAA@XZ)
+Mesh.obj : error LNK2019: unresolved external symbol D3DXLoadMeshFromXA referenced in function "public: void __cdecl Mesh::Setup(struct IDirect3DDevice9 *,char const *)" (?Setup@Mesh@@QEAAXPEAUIDirect3DDevice9@@PEBD@Z)
+Mesh.obj : error LNK2019: unresolved external symbol D3DXCreateTextureFromFileA referenced in function "public: void __cdecl Mesh::Setup(struct IDirect3DDevice9 *,char const *)" (?Setup@Mesh@@QEAAXPEAUIDirect3DDevice9@@PEBD@Z)
+C:\Users\vy phan\Documents\directx\lib\x86\d3d9.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\vy phan\Documents\directx\lib\x86\d3dx9.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\vy phan\Documents\directx\lib\x86\d3dcompiler.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\vy phan\Documents\directx\lib\x86\dxguid.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\vy phan\Documents\asn1\x64\Debug\asn1.exe : fatal error LNK1120: 18 unresolved externals
