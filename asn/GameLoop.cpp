@@ -38,28 +38,32 @@ void GameLoop::keyTracker() {
 	if (GetAsyncKeyState(VK_ESCAPE)) {
 		PostQuitMessage(0);
 	}
-	//mesh1 - '1'
+	//front - '1'
 	else if (GetKeyState(0x31) & 0x8000) {
 		index = 0;
 		init.setSpotPos(0);
 	}
-	//mesh2 - '2'
+	//right - '2'
 	else if (GetKeyState(0x32) & 0x8000) {
 		index = 1;
 		init.setSpotPos(1);
 	}
+	// top - '3'
 	else if (GetKeyState(0x33) & 0x8000) {
 		index = 2;
 		init.setSpotPos(2);
 	} 
+	// left - '4'
 	else if (GetKeyState(0x34) & 0x8000) {
 		index = 3;
 		init.setSpotPos(3);
 	}
+	// back - '5'
 	else if (GetKeyState(0x35) & 0x8000) {
 		index = 4;
 		init.setSpotPos(4);
 	}
+	// bottom - '6'
 	else if (GetKeyState(0x36) & 0x8000) {
 		index = 5;
 		init.setSpotPos(5);
@@ -139,38 +143,38 @@ void GameLoop::keyTracker() {
 
 
 	/*move camera around itself*/
-	//rotate camera up
+	//rotate camera up - I
 	else if (GetKeyState(0x49) & 0x8000) {
 		init.cameraRUp(-D3DX_PI / 20);
 
 	}
-	//rotate camera down
+	//rotate camera down - K
 	else if (GetKeyState(0x4B) & 0x8000) {
 		init.cameraRUp(D3DX_PI / 20);
 
 	}
-	//rotate camera right J
+	//rotate camera right - J
 	else if (GetKeyState(0x4A)& 0x8000) {
 		init.cameraRRight(-D3DX_PI / 20);
 
 	}
-	//rotate camera left L
+	//rotate camera left - L
 	else if (GetKeyState(0x4C) & 0x8000) {
 		init.cameraRRight(D3DX_PI / 20);
 
 	}
 
 	/*move camera aound model*/
-	//camera move up B
+	//camera move up - B
 	else if (GetKeyState(0x42) & 0x8000) {
 		init.cameraUpDown(-D3DX_PI / 2);
 	}
-	//camera move down G
+	//camera move down - G
 	else if (GetKeyState(0x47) & 0x8000) {
 		init.cameraUpDown(D3DX_PI / 2);
 
 	}
-	//camera move right V
+	//camera move right - V
 	else if (GetKeyState(0x56) & 0x8000) {
 		init.cameraLeftRight(-D3DX_PI / 4);
 
